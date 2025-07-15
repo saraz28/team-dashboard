@@ -36,7 +36,7 @@ Is an Angular-based web application designed to display and manage team member i
 
 1. **Clone the project:**
 
-````git clone https://github.com/your-username/team-dashboard.git
+```git clone https://github.com/saraz28/team-dashboard.git
  cd team-dashboard```
 
 2. **Install dependencies:**
