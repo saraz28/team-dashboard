@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "role": "Developer",
+    "avatar": "https://picsum.photos/800",
+    "email": "test@gmail.com",
+    "status": "Active",
+    "kpi": {
+      "id": 1,
+      "teamName": "Alice",
+      "efficiencyRate": 90,
+      "goalAchievementRate": 60,
+      "satisfactionScore": 3.5
+    }
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "role": "Designer",
+    "email": "test@gmail.com",
+    "status": "Active",
+    "avatar": "https://i.pravatar.cc/150?u=admin@cafearoma.com",
+    "kpi": {
+      "id": 2,
+      "teamName": "Bob",
+      "efficiencyRate": 75,
+      "goalAchievementRate": 92,
+      "satisfactionScore": 3.5
+    }
+  },
+  {
+    "id": 3,
+    "name": "Jhon",
+    "role": "customer",
+    "email": "test@gmail.com",
+    "status": "In Active",
+    "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+    "kpi": {
+      "id": 2,
+      "teamName": "Jhon",
+      "efficiencyRate": 75,
+      "goalAchievementRate": 92,
+      "satisfactionScore": 3.5
+    }
+  },
+  {
+    "id": 5,
+    "name": "Maya",
+    "role": "QA Engineer",
+    "email": "maya@example.com",
+    "status": "In Active",
+    "avatar": "https://i.imgur.com/9yG6SgM.png",
+    "kpi": {
+      "id": 5,
+      "teamName": "Maya",
+      "efficiencyRate": 79,
+      "goalAchievementRate": 84,
+      "satisfactionScore": 3.9
+    }
+  }
+]

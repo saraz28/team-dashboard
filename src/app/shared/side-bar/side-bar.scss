@@ -1,0 +1,64 @@
+//custome drawer style
+.mat-drawer-container {
+    background: #F5F6FA;
+}
+
+.mat-toolbar {
+    background: white;
+}
+
+.mat-drawer {
+    background: white;
+    border: 0;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+}
+
+
+// nav bar style
+.nav-pills {
+    .nav-link {
+        color: #202224;
+
+        &.active {
+            .icon-selected {
+                filter: invert(100%) sepia(4%) saturate(119%) hue-rotate(228deg) brightness(116%) contrast(100%);
+            }
+        }
+    }
+}
+
+
+.border-line {
+    width: 6px;
+    background-color: #ff851b;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+}
+
+.border-line-padding {
+    width: 6px;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .full-width {
+        width: 20%;
+
+        &~.mat-sidenav-content {
+            margin-left: 280px !important;
+            transition: margin-left 0.3s ease;
+        }
+    }
+
+    .mid-width {
+        width: 10%;
+    }
+
+
+}

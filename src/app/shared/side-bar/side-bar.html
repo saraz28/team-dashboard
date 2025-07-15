@@ -1,0 +1,90 @@
+<mat-sidenav-container class="m-0" [style.marginTop.px]="isMobile() ? 56 : 0">
+    <mat-sidenav
+        #sidenav
+        class="sidenav"
+        [fixedInViewport]="isMobile()"
+        fixedTopGap="0"
+        [opened]="!isMobile() || isExpanded || isShowing"
+        [mode]="isMobile() ? 'over' : 'side'"
+        [ngClass]="isExpanded || isShowing ? 'full-width' : 'mid-width'"
+        (mouseenter)="mouseenter()"
+        (mouseleave)="mouseleave()">
+        <div class="text-center p-4">
+            <img width="100" src="assets/logo/team-dashboard-logo.png"
+                alt="logo" />
+        </div>
+
+        <div class="nav flex-column nav-pills" role="tablist"
+            aria-orientation="vertical">
+            <!-- Teams Nav -->
+            <div class="d-flex align-items-stretch pe-4">
+                <div
+                    [ngClass]="activeTab === 'team' ? 'border-line' : 'border-line-padding'"></div>
+                <a
+                    class="nav-link btn-sm flex-grow-1"
+                    [routerLink]="'/team'"
+                    [class.active]="activeTab === 'team'"
+                    (click)="activeTab = 'team'; closeIfMobile()"
+                    role="tab"
+                    [attr.aria-selected]="activeTab === 'team'">
+                    <div
+                        class="d-flex flex-row-reverse align-items-center"
+                        [ngClass]="
+                isExpanded || isShowing || isMobile()
+                  ? 'justify-content-end'
+                  : 'justify-content-center'">
+                        <span *ngIf="isExpanded || isShowing || isMobile()"
+                            class="p-2">Teams</span>
+                        <div class="p-2">
+                            <i class="pi pi-users"
+                                style="font-size: 1.5rem"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Projects Nav -->
+            <div class="d-flex align-items-stretch pe-4">
+                <div
+                    [ngClass]="activeTab === 'projectsTab' ? 'border-line' : 'border-line-padding'"></div>
+                <a
+                    class="nav-link flex-grow-1"
+                    [routerLink]="'/projects'"
+                    [class.active]="activeTab === 'projectsTab'"
+                    (click)="activeTab = 'projectsTab'; closeIfMobile()"
+                    role="tab"
+                    [attr.aria-selected]="activeTab === 'projectsTab'">
+                    <div
+                        class="d-flex flex-row-reverse align-items-center"
+                        [ngClass]="
+                isExpanded || isShowing || isMobile()
+                  ? 'justify-content-end'
+                  : 'justify-content-center'
+              ">
+                        <span *ngIf="isExpanded || isShowing || isMobile()"
+                            class="p-2">Projects</span>
+                        <div class="p-2">
+                            <img
+                                class="icon-selected"
+                                width="30px"
+                                src="/assets/icons/rocket-svgrepo-com.svg"
+                                alt="projects-icon" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="toolabr-container" [class.example-is-mobile]="isMobile()">
+            <mat-toolbar color="primary" class="p-3">
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </mat-toolbar>
+        </div>
+
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

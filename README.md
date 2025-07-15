@@ -1,59 +1,51 @@
-# TeamDashboard
+# Team Dashboard App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+## Project overview
 
-## Development server
+Is an Angular-based web application designed to display and manage team member information, including their roles, statuses, and key performance indicators (KPIs).
 
-To start a local development server, run:
+## Architecture overview
 
-```bash
-ng serve
-```
+- The project follows a modular structure to improve maintainability:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Backend API calls are mocked using hardcoded JSON or service stubs.
 
-## Code scaffolding
+- Each team member has KPI metrics and avatar images displayed dynamically.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Sidebar and navigation layout across views.
 
-```bash
-ng generate component component-name
-```
+- Member statuses like "Active","In Active" are styled using Angular's ngClass.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Challenges
 
-```bash
-ng generate --help
-```
+- Unit testing for components that depend on asynchronous services.
+- Cypress tool.
 
-## Building
+---
 
-To build the project run:
+## Tech Stack
 
-```bash
-ng build
-```
+- Angular V20
+- Angular Material
+- PrimeNG
+- Bootstrap 5
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## Setup instructions
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. **Extract the project:**  
+   Unzip or extract the compressed project folder to your local machine.
 
-```bash
-ng test
-```
+2. **Install dependencies:**  
+   Open a terminal in the project folder and run: `npm install`
 
-## Running end-to-end tests
+3. **Run the application:**
+   Start the development server with either: `npm start ` or `ng serve`
 
-For end-to-end (e2e) testing, run:
+#### Running Test
 
-```bash
-ng e2e
-```
+- Run unit tests with: `npm test`
+- Cypress test with: `npm run cypress:open`
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---

@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito Sans", Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
+    font-family: "Nunito Sans", Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+    --secondary-color: #ff851b;
+}
+
+.secondary-color {
+    color: var(--secondary-color) !important;
+}
+
+.bg-success {
+    background: #708A58;
+    border-radius: 18px;
+}
+
+.bg-un-active {
+    background: #EA2F14;
+    border-radius: 18px;
+}
+
+.bg-inProgress {
+    background: #7965C1;
+    border-radius: 18px;
+}
+
+.bg-hold {
+    background: #CA7842;
+    border-radius: 18px;
+}
+
+
+.p-button {
+    background: var(--secondary-color) !important;
+    border: white !important;
+}
+
+mat-sidenav-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
+
+.text-gray {
+    color: #202224;
+    opacity: 70%;
+}
+
+
+// general card style
+.card {
+    border-radius: 18px !important;
+    border: unset !important;
+}

@@ -1,0 +1,21 @@
+// filter bar style
+.filter-card {
+    border-radius: 12px;
+    background: #F9F9FB;
+    border: 1px solid #dee2e6 !important;
+}
+
+.filter-item {
+    padding: 0.75rem 1rem;
+    border-left: 1px solid #dee2e6;
+}
+
+.filter-item.no-border {
+    border-left: none;
+}
+
+::ng-deep .custome-selector {
+    background: unset !important;
+    box-shadow: none !important;
+    border: unset !important;
+}

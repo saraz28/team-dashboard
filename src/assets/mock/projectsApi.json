@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "Website Redesign",
+    "status": "Completed",
+    "assignees": [
+      { "id": 1, "name": "Alice", "avatar": "https://i.imgur.com/5cFvD2B.jpg" },
+      { "id": 3, "name": "Sarah", "avatar": "https://i.imgur.com/qIufhof.png" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mobile App",
+    "status": "In Progress",
+    "assignees": [
+      { "id": 2, "name": "Jhon", "avatar": "https://i.imgur.com/LDOO4Qs.jpg" },
+      { "id": 4, "name": "Ahmed", "avatar": "https://i.imgur.com/uIgDDDd.jpg" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "API Refactor",
+    "status": "On Hold",
+    "assignees": [
+      { "id": 4, "name": "Ahmed", "avatar": "https://i.imgur.com/uIgDDDd.jpg" }
+    ]
+  }
+]
