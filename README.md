@@ -38,7 +38,7 @@ Is an Angular-based web application designed to display and manage team member i
 
 ```
 git clone https://github.com/saraz28/team-dashboard.git
- cd team-dashboard
+cd team-dashboard
 ```
 
 2. **Install dependencies:**
@@ -53,4 +53,3 @@ git clone https://github.com/saraz28/team-dashboard.git
 - Cypress test with: `npm run cypress:open`
 
 ---
-````
