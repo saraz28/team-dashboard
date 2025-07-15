@@ -34,14 +34,16 @@ Is an Angular-based web application designed to display and manage team member i
 
 ## Setup instructions
 
-1. **Extract the project:**  
-   Unzip or extract the compressed project folder to your local machine.
+1. **Clone the project:**
 
-2. **Install dependencies:**  
-   Open a terminal in the project folder and run: `npm install`
+````git clone https://github.com/your-username/team-dashboard.git
+ cd team-dashboard```
+
+2. **Install dependencies:**
+ Open a terminal in the project folder and run: `npm install`
 
 3. **Run the application:**
-   Start the development server with either: `npm start ` or `ng serve`
+ Start the development server with either: `npm start ` or `ng serve`
 
 #### Running Test
 
@@ -49,3 +51,4 @@ Is an Angular-based web application designed to display and manage team member i
 - Cypress test with: `npm run cypress:open`
 
 ---
+````
